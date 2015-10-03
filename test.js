@@ -21,11 +21,11 @@
     var iremLoc = {lat: 47.376756, lng: 8.548470};
     var abhaLoc = {lat: 47.376860, lng: 8.546400};
 
-    var imageUrls = ["erik", "steven", "irem", "andrea", "abha"];
+    var names = ["erik", "steven", "irem", "andrea", "abha"];
     var locations = [erikLoc, stevenLoc, iremLoc, andreaLoc, abhaLoc];
 
-    for(var i = 0; i < imageUrls.length; i++){
-      var name = imageUrls[i];
+    for(var i = 0; i < names.length; i++){
+      var name = names[i];
       var location = locations[i];
       var icon = {
         url: 'images/' + name + ' kopia.png',
