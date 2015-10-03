@@ -24,35 +24,116 @@
     var names = ["erik", "steven", "irem", "andrea", "abha"];
     var locations = [erikLoc, stevenLoc, iremLoc, andreaLoc, abhaLoc];
 
-    for(var i = 0; i < names.length; i++){
-      var name = names[i];
-      var location = locations[i];
-      var icon = {
-        url: 'images/' + name + ' kopia.png',
+    var erikIcon = {
+        url: 'images/erik kopia.png',
         scaledSize: new google.maps.Size(30, 30),
         anchor: new google.maps.Point(15, 15)
-      };
-      var marker = new google.maps.Marker({
-        position: location,
+    };
+    var erikMarker = new google.maps.Marker({
+        position: erikLoc,
         map: map,
         title: name,
-        icon: icon
-      });
-
-      marker.addListener('click', function(){
-      if(activeFriend != name){
+        icon: erikIcon
+    });
+    erikMarker.addListener('click', function(){
+      if(activeFriend != "erik"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = name
+        activeFriend = "erik";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
         activeFriend = "none";
       }
-      var capitalizedName = name.charAt(0).toUpperCase() + name.slice(1);
         $('#friendImg').css({'background-image': 'url(images/erik.jpg)'});
-        $('#friendName').text(capitalizedName);
+        $('#friendName').text("Erik");
       });
-
-    }
+    var stevenIcon = {
+        url: 'images/steven kopia.png',
+        scaledSize: new google.maps.Size(30, 30),
+        anchor: new google.maps.Point(15, 15)
+    };
+    var stevenMarker = new google.maps.Marker({
+        position: stevenLoc,
+        map: map,
+        title: name,
+        icon: stevenIcon
+    });
+    stevenMarker.addListener('click', function(){
+      if(activeFriend != "steven"){
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+        activeFriend = "steven";
+      }else{
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeFriend = "none";
+      }
+        $('#friendImg').css({'background-image': 'url(images/steven.jpg)'});
+        $('#friendName').text("Steven");
+      });
+    var iremIcon = {
+        url: 'images/irem kopia.png',
+        scaledSize: new google.maps.Size(30, 30),
+        anchor: new google.maps.Point(15, 15)
+    };
+    var iremMarker = new google.maps.Marker({
+        position: iremLoc,
+        map: map,
+        title: name,
+        icon: iremIcon
+    });
+    iremMarker.addListener('click', function(){
+      if(activeFriend != "irem"){
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+        activeFriend = "irem";
+      }else{
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeFriend = "none";
+      }
+        $('#friendImg').css({'background-image': 'url(images/irem.jpg)'});
+        $('#friendName').text("Irem");
+      });
+    var andreaIcon = {
+        url: 'images/andrea kopia.png',
+        scaledSize: new google.maps.Size(30, 30),
+        anchor: new google.maps.Point(15, 15)
+    };
+    var andreaMarker = new google.maps.Marker({
+        position: andreaLoc,
+        map: map,
+        title: name,
+        icon: andreaIcon
+    });
+    andreaMarker.addListener('click', function(){
+      if(activeFriend != "andrea"){
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+        activeFriend = "andrea";
+      }else{
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeFriend = "none";
+      }
+        $('#friendImg').css({'background-image': 'url(images/andrea.jpg)'});
+        $('#friendName').text("Andrea");
+      });
+    var abhaIcon = {
+        url: 'images/abha kopia.png',
+        scaledSize: new google.maps.Size(30, 30),
+        anchor: new google.maps.Point(15, 15)
+    };
+    var abhaMarker = new google.maps.Marker({
+        position: abhaLoc,
+        map: map,
+        title: name,
+        icon: abhaIcon
+    });
+    abhaMarker.addListener('click', function(){
+      if(activeFriend != "abha"){
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+        activeFriend = "abha";
+      }else{
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeFriend = "none";
+      }
+        $('#friendImg').css({'background-image': 'url(images/abha.jpg)'});
+        $('#friendName').text("Abha");
+      });
 
   }
 
