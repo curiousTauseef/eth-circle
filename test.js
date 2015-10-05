@@ -1,5 +1,5 @@
     var map;
-    var activeFriend = "none";
+    var activeItem = "none";
   function initMap() {
 
     var eth = {lat: 47.375737, lng: 8.547935};
@@ -10,9 +10,12 @@
       disableDefaultUI: true
     });
 
+    //Friends on the map
     map.addListener('click', function() {
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "none";
+
     });
 
     var erikLoc = {lat: 47.375737, lng: 8.547935};
@@ -36,12 +39,13 @@
         icon: erikIcon
     });
     erikMarker.addListener('click', function(){
-      if(activeFriend != "erik"){
+      if(activeItem != "erik"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = "erik";
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "erik";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+        activeItem = "none";
       }
         $('#friendImg').css({'background-image': 'url(images/erik.jpg)'});
         $('#friendName').text("Erik");
@@ -57,13 +61,14 @@
         title: name,
         icon: stevenIcon
     });
-    stevenMarker.addListener('click', function(){
-      if(activeFriend != "steven"){
+   stevenMarker.addListener('click', function(){
+      if(activeItem != "steven"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = "steven";
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "steven";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+        activeItem = "none";
       }
         $('#friendImg').css({'background-image': 'url(images/steven.jpg)'});
         $('#friendName').text("Steven");
@@ -80,12 +85,13 @@
         icon: iremIcon
     });
     iremMarker.addListener('click', function(){
-      if(activeFriend != "irem"){
+      if(activeItem != "irem"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = "irem";
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "irem";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+        activeItem = "none";
       }
         $('#friendImg').css({'background-image': 'url(images/irem.jpg)'});
         $('#friendName').text("Irem");
@@ -102,12 +108,13 @@
         icon: andreaIcon
     });
     andreaMarker.addListener('click', function(){
-      if(activeFriend != "andrea"){
+      if(activeItem != "andrea"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = "andrea";
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "andrea";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+        activeItem = "none";
       }
         $('#friendImg').css({'background-image': 'url(images/andrea.jpg)'});
         $('#friendName').text("Andrea");
@@ -124,34 +131,87 @@
         icon: abhaIcon
     });
     abhaMarker.addListener('click', function(){
-      if(activeFriend != "abha"){
+      if(activeItem != "abha"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        activeFriend = "abha";
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "abha";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeFriend = "none";
+        activeItem = "none";
       }
         $('#friendImg').css({'background-image': 'url(images/abha.jpg)'});
         $('#friendName').text("Abha");
+    });
+
+    //Events on the map
+    var chocolateLoc = {lat: 47.37599, lng: 8.547935};
+
+    var events = ["chocolate"];
+    var eventlocations = [chocolateLoc];
+
+    var chocolateIcon = {
+        url: 'images/chocolate.jpg',
+        scaledSize: new google.maps.Size(30, 30),
+        anchor: new google.maps.Point(15, 15)
+    };
+    var chocolateMarker = new google.maps.Marker({
+        position: chocolateLoc,
+        map: map,
+        title: name
+    });
+    chocolateMarker.addListener('click', function(){
+      if(activeItem != "event"){
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+        $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "event";
+      }else{
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+        activeItem = "none";
+      }
+        $('#eventImg').css({'background-image': 'url(images/chocolate.jpg)'});
+        $('#eventName').text("Free Chocolate!");
+        $('#eventDescription').text("Location: HG F.21");
       });
 
   }
 
-  $(document).ready(function(){
 
-    var menuHidden = true;
+  $(document).ready(function(){
+    //controls the menus on the left side
+    var activeMenu = "none";
     $('#menuButton').click(function(){
-      if(menuHidden){
-        $('#popOut').css({
+      if(activeMenu != "friends"){
+        $('#friendList').css({
           '-webkit-transform': 'translateY(0px)', 'transform': 'translateX(0px)'
         });
-        menuHidden = false;
-      }else{
-        $('#popOut').css({
+        $('#eventList').css({
           '-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'
         });
-        menuHidden = true;
+        activeMenu = "friends";
+      }else{
+        $('#friendList').css({
+          '-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'
+        });
+        activeMenu = "none";
       }
     });
+
+    $('#eventListButton').click(function(){
+      if(activeMenu != "events"){
+        $('#eventList').css({
+          '-webkit-transform': 'translateY(0px)', 'transform': 'translateX(0px)'
+        });
+        $('#friendList').css({
+          '-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'
+        });
+        activeMenu = "events";
+      }else{
+        $('#eventList').css({
+          '-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'
+        });
+        activeMenu = "none";
+      }
+    });
+
 
   });
