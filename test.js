@@ -157,7 +157,8 @@
     var chocolateMarker = new google.maps.Marker({
         position: chocolateLoc,
         map: map,
-        title: name
+        title: name,
+        icon: chocolateIcon
     });
     chocolateMarker.addListener('click', function(){
       if(activeItem != "event"){

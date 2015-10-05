@@ -54,7 +54,7 @@
       }
       #eventListButton{
         position: absolute;
-        right: 75px;
+        right: 90px;
         top: 20px;
       }
 
@@ -66,8 +66,8 @@
 
       #addFriendButton{
         position: absolute;
-        right: 20px;
         top: 20px;
+        right: 20px;
         background-color: white;
       }
 
@@ -138,7 +138,12 @@
         transition: 0.4s linear;
       }
 
-      #friendList > h1{
+      #friendNav{
+        display: block;
+        width: 100%;
+      }
+
+      #friendNav > h1{
         display: block;
         position: relative;
         padding: 0;
@@ -564,7 +569,7 @@
 
       @media screen and (max-width: 768px){
 
-        #friendImg, #contactButton, #eventImg, #eventButton{
+        #friendImg, #contactButton, #eventImg, #eventButton, #joinButton{
           width: 50px;
           height: 50px;
         }
@@ -606,7 +611,11 @@
 
 
         #addFriendButton{
-          right: 90px;
+          right: 160px;
+        }
+
+        #addEventMenuButton{
+          right: 160px;
         }
 
 
