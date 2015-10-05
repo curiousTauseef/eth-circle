@@ -1,5 +1,6 @@
     var map;
     var activeItem = "none";
+    var activeMenu = "none";
   function initMap() {
 
     var eth = {lat: 47.375737, lng: 8.547935};
@@ -14,8 +15,10 @@
     map.addListener('click', function() {
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
       $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      $('#eventList').css({'-webkit-transform': 'translateX(-500px)', 'transform': 'translateX(-500px)'});
+      $('#friendList').css({'-webkit-transform': 'translateX(-500px)', 'transform': 'translateX(-500px)'});
       activeItem = "none";
-
+      activeMenu = "none";
     });
 
     var erikLoc = {lat: 47.375737, lng: 8.547935};
@@ -179,7 +182,6 @@
 
   $(document).ready(function(){
     //controls the menus on the left side
-    var activeMenu = "none";
     $('#menuButton').click(function(){
       if(activeMenu != "friends"){
         $('#friendList').css({
