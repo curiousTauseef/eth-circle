@@ -44,6 +44,7 @@
     erikMarker.addListener('click', function(){
       $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
       if(activeItem != "erik"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -69,6 +70,7 @@
    stevenMarker.addListener('click', function(){
     $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
       if(activeItem != "steven"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -94,6 +96,7 @@
     iremMarker.addListener('click', function(){
       $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
       if(activeItem != "irem"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -119,6 +122,7 @@
     andreaMarker.addListener('click', function(){
       $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
       if(activeItem != "andrea"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -144,6 +148,7 @@
     abhaMarker.addListener('click', function(){
       $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
       if(activeItem != "abha"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -177,6 +182,7 @@
 
       $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      activeMenu = "none";
 
       if(activeItem != "event"){
         $('#eventWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
@@ -200,6 +206,7 @@
       
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
       $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      activeItem = "none";
       
       if(activeMenu != "friends"){
         $('#friendList').css({
@@ -221,6 +228,7 @@
 
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
       $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      activeItem = "none";
 
       if(activeMenu != "events"){
         $('#eventList').css({
