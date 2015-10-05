@@ -42,6 +42,8 @@
         icon: erikIcon
     });
     erikMarker.addListener('click', function(){
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       if(activeItem != "erik"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -65,6 +67,8 @@
         icon: stevenIcon
     });
    stevenMarker.addListener('click', function(){
+    $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       if(activeItem != "steven"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -88,6 +92,8 @@
         icon: iremIcon
     });
     iremMarker.addListener('click', function(){
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       if(activeItem != "irem"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -111,6 +117,8 @@
         icon: andreaIcon
     });
     andreaMarker.addListener('click', function(){
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       if(activeItem != "andrea"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -134,6 +142,8 @@
         icon: abhaIcon
     });
     abhaMarker.addListener('click', function(){
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
       if(activeItem != "abha"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -164,6 +174,10 @@
         icon: chocolateIcon
     });
     chocolateMarker.addListener('click', function(){
+
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+
       if(activeItem != "event"){
         $('#eventWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -183,6 +197,10 @@
   $(document).ready(function(){
     //controls the menus on the left side
     $('#menuButton').click(function(){
+      
+      $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      
       if(activeMenu != "friends"){
         $('#friendList').css({
           '-webkit-transform': 'translateY(0px)', 'transform': 'translateX(0px)'
@@ -200,6 +218,10 @@
     });
 
     $('#eventListButton').click(function(){
+
+      $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
+
       if(activeMenu != "events"){
         $('#eventList').css({
           '-webkit-transform': 'translateY(0px)', 'transform': 'translateX(0px)'
