@@ -68,19 +68,6 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        background-color: white;
-      }
-
-      #addFriendIcon{
-        color: rgb(61,135,213);
-      }
-
-      #addFriendButton:hover{
-        background-color: rgb(61,135,213);
-      }
-
-      #addFriendButton:hover > #addFriendIcon{
-        color: white;
       }
 
       .blueButton:hover > .blueIcon{
