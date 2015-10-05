@@ -87,12 +87,6 @@
         color: rgb(61,135,213);
       }
 
-      #addEventButton{
-        position: absolute;
-        right: 20px;
-        top: 90px;
-        z-index: 3;
-      }
 
       #addEventBar{
         height: 100%;

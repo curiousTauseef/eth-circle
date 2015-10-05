@@ -14,7 +14,7 @@
     map.addListener('click', function() {
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
       $('#eventWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-        activeItem = "none";
+      activeItem = "none";
 
     });
 
