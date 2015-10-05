@@ -119,12 +119,7 @@
         transition: 0.4s linear;
       }
 
-      #friendNav{
-        display: block;
-        width: 100%;
-      }
-
-      #friendNav > h1{
+      #friendList > h1{
         display: block;
         position: relative;
         padding: 0;
@@ -654,6 +649,9 @@
           width: 100%;
         }
 
+        #friendList > h1, #eventList > h1{
+          font-size: 26px;
+        }
 
         .friend > h2, .event > h2{
           font-size: 16px;
