@@ -592,6 +592,10 @@
           height: 200px;
         }
 
+        #friendName, #eventName{
+          font-size: 22px;
+        }
+
       }
 
       @media screen and (max-width: 414px){
