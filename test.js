@@ -246,5 +246,17 @@
       }
     });
 
+    $('.friend').click(function(){
+      var friend = $(this).data("target");
+      var friendCap = friend.charAt(0).toUpperCase() + friend.slice(1);
+
+      $('#friendImg').css({'background-image': 'url(images/' + friend + '.jpg)'});
+      $('#friendName').text(friendCap);
+      $('#friendList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+      activeMenu = "none";
+      activeItem = friend;
+    });
+
 
   });

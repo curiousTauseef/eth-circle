@@ -187,6 +187,7 @@
         -webkit-align-items: center;
         align-items: center;
         transition: 0.2s linear;
+        text-decoration: none;
       }
 
       .friend:hover{
