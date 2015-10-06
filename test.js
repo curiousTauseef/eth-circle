@@ -2,10 +2,6 @@
     var activeItem = "none";
     var activeMenu = "none";
 
-    var eventPopHeight = $('#eventWrapper').height();
-    $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
-
-
   function initMap() {
 
     var eth = {lat: 47.375737, lng: 8.547935};
@@ -19,7 +15,7 @@
     //Friends on the map
     map.addListener('click', function() {
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-      $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
       $('#eventList').css({'-webkit-transform': 'translateX(-500px)', 'transform': 'translateX(-500px)'});
       $('#friendList').css({'-webkit-transform': 'translateX(-500px)', 'transform': 'translateX(-500px)'});
       activeItem = "none";
@@ -52,7 +48,7 @@
       activeMenu = "none";
       if(activeItem != "erik"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "erik";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -78,7 +74,7 @@
       activeMenu = "none";
       if(activeItem != "steven"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "steven";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -104,7 +100,7 @@
       activeMenu = "none";
       if(activeItem != "irem"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "irem";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -130,7 +126,7 @@
       activeMenu = "none";
       if(activeItem != "andrea"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "andrea";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -156,7 +152,7 @@
       activeMenu = "none";
       if(activeItem != "abha"){
         $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "abha";
       }else{
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
@@ -194,7 +190,7 @@
         $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
         activeItem = "event";
       }else{
-        $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+        $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
         activeItem = "none";
       }
         $('#eventImg').css({'background-image': 'url(images/chocolate.jpg)'});
@@ -210,7 +206,7 @@
     $('#menuButton').click(function(){
       
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-      $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
       activeItem = "none";
       
       if(activeMenu != "friends"){
@@ -232,7 +228,7 @@
     $('#eventListButton').click(function(){
 
       $('#friendWrapper').css({'-webkit-transform': 'translateY(400px)', 'transform': 'translateY(400px)'});
-      $('#eventWrapper').css({'-webkit-transform': 'translateY(' + eventPopHeight + 'px)', 'transform': 'translateY(' + eventPopHeight + 'px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(500px)', 'transform': 'translateY(500px)'});
       activeItem = "none";
 
       if(activeMenu != "events"){
