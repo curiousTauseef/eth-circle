@@ -258,5 +258,18 @@
       activeItem = friend;
     });
 
+    $('.event').click(function(){
+      var _event = $(this).data("target");
+      $('#eventImg').css({'background-image': 'url(images/' + _event + '.jpg)'});
+      if(_event == "chocolate"){
+        $('#eventName').text("Free Chocolate!");
+        $('#eventDescription').text("Location: HG F.21");
+      }
+      $('#eventList').css({'-webkit-transform': 'translateY(-400px)', 'transform': 'translateX(-500px)'});
+      $('#eventWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
+      activeMenu = "none";
+      activeItem = "event";
+    });
+
 
   });
