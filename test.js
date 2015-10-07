@@ -202,7 +202,7 @@
         $('#eventImg').css({'background-image': 'url(images/chocolate.jpg)'});
         $('#eventName').text("Free Chocolate!");
         $('#eventDescription').text("Location: HG F.21");
-        $('#eventTime').text("Time: 8.09.2015 at 4PM");
+        $('#eventTime').text("Time: 8.09.2015 at 12PM");
       });
 
   }

@@ -631,9 +631,6 @@
           font-size: 22px;
         }
 
-        #friendCard, #eventCard{
-          width: 90%;
-        }
 
         #eventButtons{
           -webkit-flex-direction: column;
@@ -662,10 +659,17 @@
  
       }
 
+      @media screen and (max-width: 640px){
+        #friendCard, #eventCard{
+          width: 90%;
+        }
+      }
+
       @media screen and (max-width: 414px){
         #friendList{
           width: 100%;
         }
+
 
         #eventList{
           width: 100%;
