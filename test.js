@@ -56,6 +56,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/erik.jpg)'});
         $('#friendName').text("Erik");
+        $('#friendDescription').text("Status: At Lecture");
       });
     var stevenIcon = {
         url: 'images/steven kopia.png',
@@ -82,6 +83,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/steven.jpg)'});
         $('#friendName').text("Steven");
+        $('#friendDescription').text("Status: At Lecture");
       });
     var iremIcon = {
         url: 'images/irem kopia.png',
@@ -108,6 +110,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/irem.jpg)'});
         $('#friendName').text("Irem");
+        $('#friendDescription').text("Status: At Lecture");
       });
     var andreaIcon = {
         url: 'images/andrea kopia.png',
@@ -134,6 +137,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/andrea.jpg)'});
         $('#friendName').text("Andrea");
+        $('#friendDescription').text("Status: At Lecture");
       });
     var abhaIcon = {
         url: 'images/abha kopia.png',
@@ -160,6 +164,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/abha.jpg)'});
         $('#friendName').text("Abha");
+        $('#friendDescription').text("Status: At Lecture");
     });
 
     //Events on the map

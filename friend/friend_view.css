@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: 5%;
+}
+
+
+
+#status {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: block;
+    height: 20%;
+    margin-top: 5%;
+    font-size: 400%;
+    font-family: 'Times New Roman';
+}
+
+#img-container {
+    max-width: 80%;
+    align-self: center;
+}
+
+#friend_thumbnail {
+    border-radius: 100%;
+    height: auto;
+}
+
+#name {
+    font-size: 500%;
+    align-self: center;
+   
+}
+
+#status {
+    font-size: 300%;
+}
