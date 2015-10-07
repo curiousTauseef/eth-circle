@@ -57,7 +57,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/erik.jpg)'});
         $('#friendName').text("Erik");
-        $('#friendDescription').text("Status: At Lecture");
+        $('#friendDescription').text("Status: Pitching ETH Circle");
       });
     var stevenIcon = {
         url: 'images/steven kopia.png',
@@ -84,7 +84,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/steven.jpg)'});
         $('#friendName').text("Steven");
-        $('#friendDescription').text("Status: At Lecture");
+        $('#friendDescription').text("Status: Pitching ETH Circle");
       });
     var iremIcon = {
         url: 'images/irem kopia.png',
@@ -111,7 +111,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/irem.jpg)'});
         $('#friendName').text("Irem");
-        $('#friendDescription').text("Status: At Lecture");
+        $('#friendDescription').text("Status: Pitching ETH Circle");
       });
     var andreaIcon = {
         url: 'images/andrea kopia.png',
@@ -138,7 +138,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/andrea.jpg)'});
         $('#friendName').text("Andrea");
-        $('#friendDescription').text("Status: At Lecture");
+        $('#friendDescription').text("Status: Pitching ETH Circle");
       });
     var abhaIcon = {
         url: 'images/abha kopia.png',
@@ -165,7 +165,7 @@
       }
         $('#friendImg').css({'background-image': 'url(images/abha.jpg)'});
         $('#friendName').text("Abha");
-        $('#friendDescription').text("Status: At Lecture");
+        $('#friendDescription').text("Status: Pitching ETH Circle");
     });
 
     //Events on the map
@@ -252,7 +252,7 @@
 
       $('#friendImg').css({'background-image': 'url(images/' + friend + '.jpg)'});
       $('#friendName').text(friendCap);
-      $('#friendDescription').text("Status: At Lecture");
+      $('#friendDescription').text("Status: Pitching ETH Circle");
       $('#friendList').css({'-webkit-transform': 'translateY(-500px)', 'transform': 'translateX(-500px)'});
       $('#friendWrapper').css({'-webkit-transform': 'translateY(0px)', 'transform': 'translateY(0px)'});
       activeMenu = "none";

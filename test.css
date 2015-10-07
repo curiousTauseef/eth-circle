@@ -342,8 +342,9 @@
       }     
 
       #eventWrapper{
-        width: 100%;
         padding: 20px 0 20px 0;
+        width: 100%;
+        max-height: 100vh;
         background: linear-gradient(to bottom, transparent 15%, rgb(245,245,245) 0);
         transition: 0.4s linear;
         z-index: 2;
@@ -393,26 +394,25 @@
       }
 
       #eventImg{
+        padding: 0;
+        margin: 20px auto 0 auto;
         width: 100px;
         height: 100px;
         background-color: rgb(240,240,240);
         border-radius: 50%;
-        position: absolute;
-        left: 40px;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
         background-size: cover;
         background-position: center center;
       }
 
       #eventCard{
-        padding: 20px 0 20px 0;
         font-weight: 300;
         font-family: "Roboto";
+        padding: 20px 0 20px 0;
         position: relative;
         margin: auto auto auto auto;
-        width: 750px;
+        width: 600px;
+        max-width: 1000px;
+        min-height: 200px;
         background-color: white;
         border-radius: 3px;
         text-align: center;
@@ -421,17 +421,15 @@
 
 
       #eventName{
-        padding-top: 10px;
-        margin: 0;
+        padding: 0;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 20px auto 0 auto;
         font-size: 30px;
         color: rgb(40,40,40);
       }
 
       #eventDescription{
-        margin: 10px auto;
+        margin: 10px auto 10px;
         font-size: 16px;
         color: rgb(80,80,80);
       }
@@ -444,8 +442,8 @@
 
       #eventText{
         font-size: 14px;
-        max-width: 70%;
-        width: 400px;
+        width: 500px;
+        max-width: 80%;
         margin-right: auto;
         margin-left: auto;
         padding-bottom: 0px;
@@ -494,15 +492,13 @@
       #friendName{
         padding: 0;
         display: block;
-        margin: 10px auto 0 auto;
+        margin: 20px auto 0 auto;
         font-size: 30px;
         color: rgb(40,40,40);
       }
 
       #friendDescription{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
+        margin: 20px auto 20px auto;
         font-size: 16px;
         color: rgb(80,80,80);
       }
@@ -572,9 +568,8 @@
       }
 
       #eventButtons{
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
+        margin: 10px auto;
+        width: 130px;
         display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
         display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
         display: -ms-flexbox; /* TWEENER - IE 10 */
@@ -582,11 +577,10 @@
         display: flex;
         -webkit-flex-direction: row; /* Safari 6.1+ */
         flex-direction: row;
-
       }
 
-      #joinButton, #inviteFriend{
-        margin-left: 10px;
+     #eventButtons > a{
+        margin: auto;
         width: 45px;
         height: 45px;
         border-radius: 50%;
@@ -626,18 +620,9 @@
 
       @media screen and (max-width: 768px){
 
-        #eventImg, #eventButton, #joinButton, #inviteFriend{
-          width: 30px;
-          height: 30px;
-        }
         #contactButton{
           width: 50px;
           height: 50px;
-        }
-
-
-        #friendImg, #eventImg{
-          left: 20px;
         }
 
         #contactButton, #joinButton, #inviteFriend{
@@ -654,24 +639,6 @@
 
         #contactIcon{
           font-size: 22px;
-        }
-
-
-        #eventButtons{
-          -webkit-flex-direction: column;
-          flex-direction: column;
-          right: 10px;
-          bottom: 10px;
-        }
-
-        #eventImg{
-          position: absolute;
-          left: 10px;
-          top: 10px;
-          -webkit-transform: translateY(0);
-          transform: translateY(0);
-          width: 50px;
-          height: 50px;
         }
 
         #inviteFriend{
@@ -700,6 +667,9 @@
           width: 100%;
         }
 
+        #eventCard{
+          width: 95%;
+        }
 
         #eventList{
           width: 100%;
@@ -715,5 +685,23 @@
 
         #addFriendButton, #addEventMenuButton{
           right: 160px;
+        }
+      }
+      @media screen and (max-width: 640px){
+        #friendCard{
+          width: 90%;
+        }
+      }
+
+      @media screen and (max-width: 320px){
+        #eventImg{
+          margin-top: 10px;
+        }
+        #eventWrapper{
+          padding-bottom: 5px;
+          padding-top: 5px;
+        }
+        #eventButtons{
+          margin-bottom: 0px;
         }
       }
